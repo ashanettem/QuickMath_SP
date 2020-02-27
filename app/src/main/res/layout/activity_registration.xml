@@ -157,7 +157,7 @@
             android:layout_height="71dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/white_border"
-            android:editable="false"
+            android:editable="true"
             android:gravity="center"
             android:hint="@string/DOB_REG"
             android:textColor="#FAFAFA"

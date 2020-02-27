@@ -90,7 +90,7 @@ public class Registration extends AppCompatActivity {
             db.collection("Users").add(newStudent);
 
             Intent intent;
-            intent = new Intent(this, MainActivity.class);
+            intent = new Intent(this, Login.class);
             startActivity(intent);
 
 
