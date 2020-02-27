@@ -8,7 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#081FA2"
         tools:context=".RegisterActivity">
 
@@ -20,7 +20,7 @@
             android:background="@drawable/white_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="password"
+            android:hint="@string/password"
             android:inputType="textPersonName"
             android:textColor="#FAFAFA"
             android:textSize="25sp"
@@ -28,7 +28,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+            app:layout_constraintTop_toBottomOf="@+id/eTDate" />
 
         <EditText
             android:id="@+id/eTChildEmail1"
@@ -38,7 +38,7 @@
             android:background="@drawable/white_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="child's email address"
+            android:hint="@string/child_s_email_address"
             android:inputType="textEmailAddress"
             android:textColor="#FAFAFA"
             android:textSize="25sp"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp"
-            android:text="child's email address"
+            android:text="@string/child_s_email_address_lbl"
             android:textColor="#F7F9F5"
             android:textStyle="bold"
             android:visibility="invisible"
@@ -66,7 +66,7 @@
             android:id="@+id/tVPWD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="password"
+            android:text="@string/password"
             android:textColor="#FFEB3B"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/eTPWD"
@@ -82,8 +82,7 @@
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/kody" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/rButton"
@@ -91,8 +90,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/red_border"
-            android:onClick="backToLogin"
-            android:text="Register"
+            android:text="@string/register"
             android:textColor="#FFEB3B"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -108,7 +106,7 @@
             android:background="@drawable/white_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="email address"
+            android:hint="@string/email_address"
             android:inputType="textEmailAddress"
             android:textColor="#FAFAFA"
             android:textSize="25sp"
@@ -126,7 +124,7 @@
             android:background="@drawable/white_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="first name"
+            android:hint="@string/first_name"
             android:inputType="textPersonName"
             android:textColor="#FAFAFA"
             android:textSize="25sp"
@@ -143,7 +141,7 @@
             android:background="@drawable/white_border"
             android:ems="10"
             android:gravity="center"
-            android:hint="last name"
+            android:hint="@string/last_name"
             android:inputType="textPersonName"
             android:textColor="#FAFAFA"
             android:textSize="25sp"
@@ -153,15 +151,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/eTFN" />
 
-        <TextView
-            android:id="@+id/tvDate"
+        <EditText
+            android:id="@+id/eTDate"
             android:layout_width="306dp"
             android:layout_height="71dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/white_border"
             android:editable="false"
             android:gravity="center"
-            android:hint="date of bith"
+            android:hint="@string/DOB_REG"
             android:textColor="#FAFAFA"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -174,7 +172,7 @@
             android:id="@+id/tVFN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="first name"
+            android:text="@string/first_name"
             android:textColor="#FFEB3B"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/eTFN"
@@ -186,7 +184,7 @@
             android:id="@+id/tVLN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="last name"
+            android:text="@string/last_name"
             android:textColor="#FF9800"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/eTLN"
@@ -199,7 +197,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="email address"
+            android:text="@string/email_address"
             android:textColor="#8BC34A"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/eTEmail"
@@ -211,21 +209,20 @@
             android:id="@+id/tVDOB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="date of birth"
+            android:text="@string/date_of_birth"
             android:textColor="#C139DA"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/tvDate"
+            app:layout_constraintEnd_toEndOf="@+id/eTDate"
             app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="@+id/tvDate"
-            app:layout_constraintTop_toTopOf="@+id/tvDate" />
+            app:layout_constraintStart_toStartOf="@+id/eTDate"
+            app:layout_constraintTop_toTopOf="@+id/eTDate" />
 
         <CheckBox
             android:id="@+id/checkBox"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:onClick="checkParent"
-            android:text="Parent"
+            android:text="@string/parent"
             android:textColor="#F8F5F5"
             android:textSize="24sp"
             android:textStyle="bold"

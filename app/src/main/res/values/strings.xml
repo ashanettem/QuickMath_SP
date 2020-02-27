@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">QuickMath</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="SP_REG">RegLog</string>
+
+    <string name="child_s_email_address">child\'s email address</string>
+    <string name="child_s_email_address_lbl">child\'s email address</string>
+
+    <string name="register">Register</string>
+
+
+    <string name="DOB_REG">date of birth</string>
+    <string name="first_name">first name</string>
+    <string name="last_name">last name</string>
+    <string name="email_address">email address</string>
+    <string name="date_of_birth">date of birth</string>
+    <string name="parent">Parent</string>
 </resources>

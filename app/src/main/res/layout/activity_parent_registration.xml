@@ -28,7 +28,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+            app:layout_constraintTop_toBottomOf="@+id/eTDate" />
 
         <TextView
             android:id="@+id/tVPWD"
@@ -61,8 +61,7 @@
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/kody" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/rButton"
@@ -165,7 +164,7 @@
             app:layout_constraintTop_toBottomOf="@+id/eTFN" />
 
         <TextView
-            android:id="@+id/tvDate"
+            android:id="@+id/eTDate"
             android:layout_width="306dp"
             android:layout_height="71dp"
             android:layout_marginTop="32dp"
@@ -224,10 +223,10 @@
             android:text="date of birth"
             android:textColor="#C139DA"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/tvDate"
+            app:layout_constraintEnd_toEndOf="@+id/eTDate"
             app:layout_constraintHorizontal_bias="0.017"
-            app:layout_constraintStart_toStartOf="@+id/tvDate"
-            app:layout_constraintTop_toTopOf="@+id/tvDate" />
+            app:layout_constraintStart_toStartOf="@+id/eTDate"
+            app:layout_constraintTop_toTopOf="@+id/eTDate" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
