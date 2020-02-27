@@ -48,7 +48,7 @@ public class Registration extends AppCompatActivity {
         String lastName = regLName.getText().toString().trim();
         String password = regPass.getText().toString().trim();
         String email = regEmail.getText().toString().trim();
-        int age = Integer.parseInt(regAge.getText().toString().trim());
+        //int age = Integer.parseInt(regAge.getText().toString().trim());
 
 
         if(firstName.isEmpty()|| firstName.length() > 12 ){
@@ -76,11 +76,11 @@ public class Registration extends AppCompatActivity {
 
         }
 
-        if(age == 0){
+      /* if(age == 0){
             Toast.makeText(Registration.this, "Invalid Input, Date of Birth must be between 8 characters in numerical format", Toast.LENGTH_SHORT).show();
 
 
-        }
+        }*/
 
         else {
 
