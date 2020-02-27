@@ -73,6 +73,10 @@ public class Login extends AppCompatActivity {
                         else{
                             Toast.makeText(Login.this, "Please Try Again", Toast.LENGTH_LONG).show();
                         }*/
+
+
+                        Intent i = new Intent(view.getContext(),MainActivity.class);
+                        startActivity(i);
                     }
                 }
             });
