@@ -1,4 +1,3 @@
-
 package com.example.quickmath;
 
 import com.google.firebase.firestore.Exclude;
