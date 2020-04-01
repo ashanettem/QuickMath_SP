@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ParentRegistration"></activity>
+        <activity android:name=".Game"></activity>
+        <activity android:name=".ParentRegistration" />
         <activity android:name=".Registration" />
         <activity android:name=".Login">
             <intent-filter>
@@ -18,8 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
